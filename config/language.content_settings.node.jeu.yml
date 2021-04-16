@@ -1,0 +1,11 @@
+uuid: 55c43d07-3e3a-4125-99de-72552698898a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.jeu
+id: node.jeu
+target_entity_type_id: node
+target_bundle: jeu
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: cf96333f-a84f-47c3-b133-8b2884093b69
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.jeu
+id: node.jeu.status
+field_name: status
+entity_type: node
+bundle: jeu
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

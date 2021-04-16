@@ -1,0 +1,32 @@
+uuid: 7e350211-9f6a-426e-b7b4-de5a2fefb1ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.video_distante.field_alternative_textuelle
+    - field.field.media.video_distante.field_legende
+    - field.field.media.video_distante.field_media_oembed_video
+    - media.type.video_distante
+id: media.video_distante.media_library
+targetEntityType: media
+bundle: video_distante
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_alternative_textuelle: true
+  field_legende: true
+  field_media_oembed_video: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

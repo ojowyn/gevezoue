@@ -1,0 +1,17 @@
+uuid: 96a24c4d-b304-4af3-9838-95eca0c77a67
+langcode: fr
+status: true
+dependencies: {  }
+id: video_distante
+label: 'Vidéo distante'
+description: ''
+source: 'oembed:video'
+queue_thumbnail_downloads: true
+new_revision: false
+source_configuration:
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers:
+    - YouTube
+    - Vimeo
+  source_field: field_media_oembed_video
+field_map: {  }

@@ -1,0 +1,19 @@
+uuid: 202f1005-abd8-4e60-bb1f-1d5810e8c789
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_legende
+    - media.type.video_distante
+id: media.video_distante.field_legende
+field_name: field_legende
+entity_type: media
+bundle: video_distante
+label: Légende
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

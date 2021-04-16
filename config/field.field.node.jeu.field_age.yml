@@ -1,0 +1,23 @@
+uuid: d14107a1-4e33-4173-8007-055f633de9c9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_age
+    - node.type.jeu
+id: node.jeu.field_age
+field_name: field_age
+entity_type: node
+bundle: jeu
+label: 'Age Recommandé'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 3
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

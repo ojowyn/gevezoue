@@ -1,0 +1,19 @@
+uuid: e802311b-7816-4ce9-9951-304b9bc93d67
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duree
+    - node.type.jeu
+id: node.jeu.field_duree
+field_name: field_duree
+entity_type: node
+bundle: jeu
+label: Durée
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 42dbf67b-10cd-4faa-8c7f-7cc362092ea8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_teaser
+    - node.type.article
+id: node.article.field_image_teaser
+field_name: field_image_teaser
+entity_type: node
+bundle: article
+label: 'Image Teaser'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

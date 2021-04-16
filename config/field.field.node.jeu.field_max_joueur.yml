@@ -1,0 +1,23 @@
+uuid: ea8d9474-0fb4-4c13-9a5c-65d78498d3cc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_max_joueur
+    - node.type.jeu
+id: node.jeu.field_max_joueur
+field_name: field_max_joueur
+entity_type: node
+bundle: jeu
+label: 'Nb Max Joueur'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

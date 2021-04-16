@@ -1,0 +1,29 @@
+uuid: 249663a8-6472-4dc2-a02e-3bd4dee8a38d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editeur
+    - node.type.editeur
+    - node.type.jeu
+id: node.jeu.field_editeur
+field_name: field_editeur
+entity_type: node
+bundle: jeu
+label: Editeur
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      editeur: editeur
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

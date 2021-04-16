@@ -1,0 +1,33 @@
+uuid: a2fa7fe1-3a40-4146-9382-d9e1acf4a87c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_position_image
+field_name: field_position_image
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: left
+      label: Gauche
+    -
+      value: right
+      label: Droite
+    -
+      value: top
+      label: 'Au dessus'
+    -
+      value: bottom
+      label: 'Au dessous'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

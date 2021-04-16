@@ -1,0 +1,27 @@
+uuid: e401b552-4431-4ef8-a470-8653f79b3058
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.personnalite.field_corps
+    - field.field.node.personnalite.field_portrait
+    - field.field.node.personnalite.field_type
+    - node.type.personnalite
+  module:
+    - user
+id: node.personnalite.teaser
+targetEntityType: node
+bundle: personnalite
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_corps: true
+  field_portrait: true
+  field_type: true
+  langcode: true

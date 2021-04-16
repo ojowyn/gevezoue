@@ -1,0 +1,8 @@
+uuid: 22ca4b28-0899-49cf-ad93-466a10bfe99a
+langcode: fr
+status: true
+dependencies: {  }
+name: Catégorie
+vid: categorie
+description: 'Catégorie d''article'
+weight: 0

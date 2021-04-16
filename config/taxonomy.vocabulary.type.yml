@@ -1,0 +1,8 @@
+uuid: ebfdf903-4716-4536-9ffa-0f7d5a248c04
+langcode: fr
+status: true
+dependencies: {  }
+name: Type
+vid: type
+description: 'Type de jeu'
+weight: 0

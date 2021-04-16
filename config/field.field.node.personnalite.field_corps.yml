@@ -1,0 +1,38 @@
+uuid: 82a509c2-b6cd-4d87-a00b-f92fabbe4b32
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_corps
+    - node.type.personnalite
+  module:
+    - entity_reference_revisions
+id: node.personnalite.field_corps
+field_name: field_corps
+entity_type: node
+bundle: personnalite
+label: Biographie
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      images:
+        weight: 5
+        enabled: false
+      media_video:
+        weight: 6
+        enabled: false
+      texte:
+        weight: 7
+        enabled: false
+      texte_image:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

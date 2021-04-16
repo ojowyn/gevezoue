@@ -1,0 +1,25 @@
+uuid: a91ca7fa-4af4-4a42-8d19-1b96d3ed0b76
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.editeur.field_corps
+    - field.field.node.editeur.field_logo
+    - node.type.editeur
+  module:
+    - user
+id: node.editeur.teaser
+targetEntityType: node
+bundle: editeur
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_corps: true
+  field_logo: true
+  langcode: true

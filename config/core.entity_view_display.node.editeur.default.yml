@@ -1,0 +1,41 @@
+uuid: 72052cde-8fd0-4a22-b908-2a28dae41b6a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.editeur.field_corps
+    - field.field.node.editeur.field_logo
+    - node.type.editeur
+  module:
+    - entity_reference_revisions
+    - user
+id: node.editeur.default
+targetEntityType: node
+bundle: editeur
+mode: default
+content:
+  field_corps:
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_logo:
+    type: entity_reference_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

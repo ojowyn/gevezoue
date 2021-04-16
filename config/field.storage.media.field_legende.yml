@@ -1,0 +1,19 @@
+uuid: 77d30f59-2ef1-4d49-8ce4-c9e1385bc293
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_legende
+field_name: field_legende
+entity_type: media
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

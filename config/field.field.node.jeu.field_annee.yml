@@ -1,0 +1,19 @@
+uuid: fcf1183b-21cd-4310-8100-2cd4ccbdf973
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annee
+    - node.type.jeu
+id: node.jeu.field_annee
+field_name: field_annee
+entity_type: node
+bundle: jeu
+label: Année
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

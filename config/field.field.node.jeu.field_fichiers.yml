@@ -1,0 +1,29 @@
+uuid: 33c4177d-97ae-4adf-a407-e00a419383d6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fichiers
+    - media.type.document
+    - node.type.jeu
+id: node.jeu.field_fichiers
+field_name: field_fichiers
+entity_type: node
+bundle: jeu
+label: 'Fichiers liés'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

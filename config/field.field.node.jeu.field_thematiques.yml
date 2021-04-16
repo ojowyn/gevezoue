@@ -1,0 +1,29 @@
+uuid: 3a86bdb8-0e45-422a-ac74-3f73b77b5063
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thematiques
+    - node.type.jeu
+    - taxonomy.vocabulary.theme
+id: node.jeu.field_thematiques
+field_name: field_thematiques
+entity_type: node
+bundle: jeu
+label: Thématiques
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      theme: theme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

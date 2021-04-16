@@ -1,0 +1,46 @@
+uuid: 02ac69fa-6f2a-4b16-bfe4-7062c694ab43
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.media.video_distante.field_alternative_textuelle
+    - field.field.media.video_distante.field_legende
+    - field.field.media.video_distante.field_media_oembed_video
+    - media.type.video_distante
+  module:
+    - media
+    - text
+id: media.video_distante.default
+targetEntityType: media
+bundle: video_distante
+mode: default
+content:
+  field_alternative_textuelle:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_legende:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_media_oembed_video:
+    type: oembed
+    label: visually_hidden
+    weight: 0
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

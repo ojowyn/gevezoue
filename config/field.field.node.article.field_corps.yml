@@ -1,0 +1,35 @@
+uuid: d37209ef-5a9e-4de2-9af4-b8d706c894c8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_corps
+    - node.type.article
+  module:
+    - entity_reference_revisions
+id: node.article.field_corps
+field_name: field_corps
+entity_type: node
+bundle: article
+label: Corps
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      images:
+        weight: -5
+        enabled: false
+      texte:
+        weight: -7
+        enabled: false
+      texte_image:
+        weight: -6
+        enabled: false
+field_type: entity_reference_revisions

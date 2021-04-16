@@ -1,0 +1,14 @@
+uuid: 0d54430a-e136-4e9b-87e9-aa3b84da185b
+name: GeVeZoué
+mail: postmaster@gevezoue.fr
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

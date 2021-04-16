@@ -1,0 +1,10 @@
+uuid: cd7efe53-b5dd-4549-a1ed-a9c4d92b4e06
+langcode: fr
+status: true
+dependencies: {  }
+id: media_video
+label: 'Média Vidéo'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

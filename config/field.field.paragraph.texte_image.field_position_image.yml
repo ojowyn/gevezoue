@@ -1,0 +1,21 @@
+uuid: 86ca1097-8379-4ecd-bce5-800270fd1d75
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position_image
+    - paragraphs.paragraphs_type.texte_image
+  module:
+    - options
+id: paragraph.texte_image.field_position_image
+field_name: field_position_image
+entity_type: paragraph
+bundle: texte_image
+label: 'Position image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

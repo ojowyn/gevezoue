@@ -1,0 +1,22 @@
+uuid: 80a503cb-86a5-4041-a17c-b1a3e2ce1090
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.personnalite
+id: node.personnalite.status
+field_name: status
+entity_type: node
+bundle: personnalite
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

@@ -1,0 +1,21 @@
+uuid: a0972f43-a62e-484e-9842-0f2eddfd0c22
+langcode: fr
+status: false
+dependencies: {  }
+id: local
+label: local
+description: ''
+folder: ../split/local
+module:
+  devel: 0
+  webprofiler: 0
+theme: {  }
+blacklist:
+  - dblog.settings
+graylist:
+  - system.logging
+  - system.performance
+  - system.site
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

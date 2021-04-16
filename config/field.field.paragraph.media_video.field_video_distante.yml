@@ -1,0 +1,29 @@
+uuid: 9358a9ae-5a3e-4ab5-b5b0-b101e16b0e51
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_distante
+    - media.type.video_distante
+    - paragraphs.paragraphs_type.media_video
+id: paragraph.media_video.field_video_distante
+field_name: field_video_distante
+entity_type: paragraph
+bundle: media_video
+label: 'Vidéo distante'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video_distante: video_distante
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

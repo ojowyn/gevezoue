@@ -1,0 +1,14 @@
+uuid: 29217fc2-f9e3-4d2e-a1ea-f50f4f550e99
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Utilisateur authentifié'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format texte_riche'
+  - 'view media'

@@ -1,0 +1,29 @@
+uuid: 5a601b7d-f1ec-4685-9b96-f0b6465dde07
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_auteurs
+    - node.type.jeu
+    - node.type.personnalite
+id: node.jeu.field_auteurs
+field_name: field_auteurs
+entity_type: node
+bundle: jeu
+label: Auteurs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      personnalite: personnalite
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: 3f18a459-5e9e-47a6-bcc3-27631e89cad1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.personnalite
+id: node.personnalite
+target_entity_type_id: node
+target_bundle: personnalite
+default_langcode: site_default
+language_alterable: false

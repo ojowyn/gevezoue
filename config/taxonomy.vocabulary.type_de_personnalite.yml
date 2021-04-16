@@ -1,0 +1,8 @@
+uuid: f54c0b10-55c8-4a1a-af47-ed438772f4ff
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type de personnalité'
+vid: type_de_personnalite
+description: 'Type de personnalité'
+weight: 0

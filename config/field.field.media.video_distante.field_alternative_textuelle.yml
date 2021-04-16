@@ -1,0 +1,21 @@
+uuid: c31a4c5a-a906-4fc4-ac28-7f1a407cef74
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_alternative_textuelle
+    - media.type.video_distante
+  module:
+    - text
+id: media.video_distante.field_alternative_textuelle
+field_name: field_alternative_textuelle
+entity_type: media
+bundle: video_distante
+label: 'Alternative Textuelle'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

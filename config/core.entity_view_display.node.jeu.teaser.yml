@@ -1,0 +1,53 @@
+uuid: 7539f5af-172a-49bb-8b60-98a95d436666
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.jeu.field_age
+    - field.field.node.jeu.field_annee
+    - field.field.node.jeu.field_auteurs
+    - field.field.node.jeu.field_corps
+    - field.field.node.jeu.field_duree
+    - field.field.node.jeu.field_editeur
+    - field.field.node.jeu.field_fichiers
+    - field.field.node.jeu.field_illustrateurs
+    - field.field.node.jeu.field_image_teaser
+    - field.field.node.jeu.field_max_joueur
+    - field.field.node.jeu.field_mecaniques
+    - field.field.node.jeu.field_min_joueur
+    - field.field.node.jeu.field_teaser
+    - field.field.node.jeu.field_thematiques
+    - field.field.node.jeu.field_type
+    - field.field.node.jeu.field_videos
+    - node.type.jeu
+  module:
+    - user
+id: node.jeu.teaser
+targetEntityType: node
+bundle: jeu
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_age: true
+  field_annee: true
+  field_auteurs: true
+  field_corps: true
+  field_duree: true
+  field_editeur: true
+  field_fichiers: true
+  field_illustrateurs: true
+  field_image_teaser: true
+  field_max_joueur: true
+  field_mecaniques: true
+  field_min_joueur: true
+  field_teaser: true
+  field_thematiques: true
+  field_type: true
+  field_videos: true
+  langcode: true

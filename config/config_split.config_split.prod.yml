@@ -1,0 +1,18 @@
+uuid: a5a06438-9f49-473a-a14d-e3a6afca41c9
+langcode: fr
+status: false
+dependencies: {  }
+id: prod
+label: prod
+description: ''
+folder: ../split/prod
+module: {  }
+theme: {  }
+blacklist:
+  - system.logging
+  - system.performance
+  - system.site
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
