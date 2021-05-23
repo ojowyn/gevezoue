@@ -18,7 +18,7 @@ content:
   field_image:
     type: entity_reference_entity_view
     weight: 1
-    label: above
+    label: visually_hidden
     settings:
       view_mode: default
       link: false
@@ -26,14 +26,14 @@ content:
     region: content
   field_position_image:
     weight: 2
-    label: above
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    type: list_key
     region: content
   field_texte:
     weight: 0
-    label: above
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default

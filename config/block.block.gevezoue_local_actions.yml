@@ -1,0 +1,20 @@
+uuid: eaee5dee-ccf0-42fc-8858-764cbde8e7a6
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - gevezoue
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: gevezoue_local_actions
+theme: gevezoue
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

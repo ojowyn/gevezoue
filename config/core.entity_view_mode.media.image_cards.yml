@@ -1,0 +1,10 @@
+uuid: 09e31008-2a09-47c9-90cb-2f7939e0065e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.image_cards
+label: 'Image Cards'
+targetEntityType: media
+cache: true

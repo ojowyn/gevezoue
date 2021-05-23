@@ -1,0 +1,23 @@
+uuid: 48c934de-b606-4971-90b3-abb18ac67631
+langcode: fr
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: article_categorie
+label: 'Catégorie d''actualité'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:name]'
+selection_criteria:
+  9164aac5-4fe2-422f-89b2-f99a153815f5:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      categorie: categorie
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 9164aac5-4fe2-422f-89b2-f99a153815f5
+selection_logic: and
+weight: -5
+relationships: {  }

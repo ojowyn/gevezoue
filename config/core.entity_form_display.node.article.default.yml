@@ -50,10 +50,10 @@ content:
         duplicate: duplicate
     third_party_settings:
       paragraphs_features:
+        add_in_between: true
         split_text: true
         show_drag_and_drop: true
         delete_confirmation: false
-        add_in_between: false
       paragraphs_ee:
         paragraphs_ee:
           dialog_off_canvas: true

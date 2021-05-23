@@ -21,7 +21,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_image:
-    weight: 0
+    weight: 101
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

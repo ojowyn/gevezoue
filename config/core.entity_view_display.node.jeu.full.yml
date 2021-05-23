@@ -1,0 +1,180 @@
+uuid: 49cebd70-8d65-41ee-9039-8804a0e38c49
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.jeu.field_age
+    - field.field.node.jeu.field_annee
+    - field.field.node.jeu.field_auteurs
+    - field.field.node.jeu.field_corps
+    - field.field.node.jeu.field_duree
+    - field.field.node.jeu.field_editeur
+    - field.field.node.jeu.field_fichiers
+    - field.field.node.jeu.field_illustrateurs
+    - field.field.node.jeu.field_image_teaser
+    - field.field.node.jeu.field_max_joueur
+    - field.field.node.jeu.field_mecaniques
+    - field.field.node.jeu.field_min_joueur
+    - field.field.node.jeu.field_on_ludotheque
+    - field.field.node.jeu.field_teaser
+    - field.field.node.jeu.field_thematiques
+    - field.field.node.jeu.field_type
+    - field.field.node.jeu.field_videos
+    - node.type.jeu
+  module:
+    - entity_reference_revisions
+    - user
+id: node.jeu.full
+targetEntityType: node
+bundle: jeu
+mode: full
+content:
+  field_age:
+    weight: 10
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_annee:
+    weight: 14
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_auteurs:
+    weight: 7
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_corps:
+    weight: 3
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_duree:
+    weight: 13
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_editeur:
+    weight: 9
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_fichiers:
+    type: entity_reference_entity_view
+    weight: 16
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_illustrateurs:
+    weight: 8
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_image_teaser:
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: image_teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_max_joueur:
+    weight: 12
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_mecaniques:
+    weight: 6
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_min_joueur:
+    weight: 11
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_teaser:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_thematiques:
+    weight: 5
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_type:
+    weight: 4
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_videos:
+    type: entity_reference_entity_view
+    weight: 15
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_on_ludotheque: true
+  langcode: true

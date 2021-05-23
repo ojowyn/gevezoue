@@ -1,0 +1,23 @@
+uuid: 04e6fa89-a657-40f7-b7a2-a027dfd46c13
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_on_ludotheque
+    - node.type.jeu
+id: node.jeu.field_on_ludotheque
+field_name: field_on_ludotheque
+entity_type: node
+bundle: jeu
+label: 'Dans la Ludotheque'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Dans la ludothèque'
+  off_label: 'Pas dans la ludothèque'
+field_type: boolean

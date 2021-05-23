@@ -26,8 +26,8 @@ content:
   field_corps:
     weight: 2
     settings:
-      title: Paragraphe
-      title_plural: Paragraphs
+      title: Bloc
+      title_plural: Blocs
       edit_mode: open
       closed_mode: preview
       autocollapse: none

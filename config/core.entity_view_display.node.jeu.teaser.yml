@@ -1,6 +1,6 @@
 uuid: 7539f5af-172a-49bb-8b60-98a95d436666
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.jeu.field_max_joueur
     - field.field.node.jeu.field_mecaniques
     - field.field.node.jeu.field_min_joueur
+    - field.field.node.jeu.field_on_ludotheque
     - field.field.node.jeu.field_teaser
     - field.field.node.jeu.field_thematiques
     - field.field.node.jeu.field_type
@@ -28,11 +29,27 @@ targetEntityType: node
 bundle: jeu
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_image_teaser:
+    type: entity_reference_entity_view
+    weight: 1
+    region: content
+    label: visually_hidden
+    settings:
+      view_mode: image_cards
+      link: false
+    third_party_settings: {  }
+  field_teaser:
+    type: basic_string
+    weight: 2
+    region: content
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
+  links:
+    weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_age: true
   field_annee: true
@@ -42,11 +59,10 @@ hidden:
   field_editeur: true
   field_fichiers: true
   field_illustrateurs: true
-  field_image_teaser: true
   field_max_joueur: true
   field_mecaniques: true
   field_min_joueur: true
-  field_teaser: true
+  field_on_ludotheque: true
   field_thematiques: true
   field_type: true
   field_videos: true

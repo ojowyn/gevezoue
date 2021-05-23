@@ -1,0 +1,20 @@
+uuid: b01b731b-0f52-4f1a-a9b7-90369e50df27
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - gevezoue
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: gevezoue_page_title
+theme: gevezoue
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

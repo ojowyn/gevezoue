@@ -1,0 +1,22 @@
+uuid: 93376e21-1e38-4e15-8c71-910845ee3074
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - gevezoue
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: gevezoue_local_tasks
+theme: gevezoue
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

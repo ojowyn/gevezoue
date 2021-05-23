@@ -1,0 +1,10 @@
+uuid: 195bc611-e676-41f2-8f63-16beab6b83b7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+id: file.token
+label: 'Jeton (token)'
+targetEntityType: file
+cache: true

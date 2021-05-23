@@ -45,3 +45,7 @@ sites/simpletest
 
 # Ignore SimpleTest multi-site environment.
 # simpletest
+/themes/custom/gevezoue/node_modules/
+/themes/custom/gevezoue/package-lock.json
+/themes/custom/gevezoue/yarn.lock
+/themes/custom/gevezoue/yarn-error.log
