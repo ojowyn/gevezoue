@@ -1,36 +1,37 @@
-uuid: e401b552-4431-4ef8-a470-8653f79b3058
+uuid: 3fd023ba-bc60-4dd1-992a-898d090ccdcb
 langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card
     - field.field.node.personnalite.field_corps
     - field.field.node.personnalite.field_portrait
     - field.field.node.personnalite.field_type
     - node.type.personnalite
   module:
     - user
-id: node.personnalite.teaser
+id: node.personnalite.card
 targetEntityType: node
 bundle: personnalite
-mode: teaser
+mode: card
 content:
   field_portrait:
-    type: entity_reference_label
-    weight: 2
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_type:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
-    label: above
+  field_type:
+    weight: 2
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   links:
     weight: 0
     region: content

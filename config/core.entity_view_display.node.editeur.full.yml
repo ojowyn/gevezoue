@@ -1,18 +1,19 @@
-uuid: 72052cde-8fd0-4a22-b908-2a28dae41b6a
+uuid: b3909a5a-cc7e-47d6-aff1-d05cbb8825df
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.editeur.field_corps
     - field.field.node.editeur.field_logo
     - node.type.editeur
   module:
     - entity_reference_revisions
     - user
-id: node.editeur.default
+id: node.editeur.full
 targetEntityType: node
 bundle: editeur
-mode: default
+mode: full
 content:
   field_corps:
     weight: 102
@@ -34,8 +35,8 @@ content:
     region: content
   links:
     weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true

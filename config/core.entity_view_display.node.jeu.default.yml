@@ -56,7 +56,7 @@ content:
     region: content
   field_corps:
     weight: 3
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
@@ -98,7 +98,7 @@ content:
     region: content
   field_image_teaser:
     weight: 1
-    label: above
+    label: hidden
     settings:
       view_mode: image_teaser
       link: false
@@ -143,7 +143,7 @@ content:
     region: content
   field_teaser:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string

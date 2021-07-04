@@ -1,19 +1,21 @@
-uuid: 06d48d9f-9f24-4b94-9ccd-e6b3b2bd73a4
+uuid: 939f2af8-5064-4537-acd6-42250e309127
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.article.field_categorie
     - field.field.node.article.field_corps
     - field.field.node.article.field_image_teaser
     - field.field.node.article.field_teaser
     - node.type.article
   module:
+    - entity_reference_revisions
     - user
-id: node.article.default
+id: node.article.full
 targetEntityType: node
 bundle: article
-mode: default
+mode: full
 content:
   field_categorie:
     weight: 3
@@ -23,6 +25,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_corps:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_image_teaser:
     type: entity_reference_entity_view
     weight: 1
@@ -45,5 +56,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_corps: true
   langcode: true

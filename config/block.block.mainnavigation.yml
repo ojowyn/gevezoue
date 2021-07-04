@@ -10,8 +10,8 @@ dependencies:
     - gevezoue
 id: mainnavigation
 theme: gevezoue
-region: primary_menu
-weight: 0
+region: header
+weight: -3
 provider: null
 plugin: 'system_menu_block:main'
 settings:

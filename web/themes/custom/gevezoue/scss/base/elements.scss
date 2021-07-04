@@ -1,8 +1,11 @@
 @import "../../node_modules/css-reset-and-normalize/scss/reset-and-normalize";
 @import "../../node_modules/css-reset-and-normalize/scss/button-reset";
 @import "../../node_modules/css-reset-and-normalize/scss/link-reset";
+@import "../mixin";
 
 body {
+  color: $black;
+  background-color: $white;
   line-height: 1.5;
 }
 
@@ -39,8 +42,87 @@ h6 {
   font-size: 1rem;
 }
 
-/**
- *
- */
+code {
+  background-color: $light-gray ;
+  display: inline-block;
+  padding: 2px;
+}
+
+blockquote {
+  margin: 10px 0;
+  padding: 5px 0 5px 20px;
+  position: relative;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+    border-left: $blue double 5px ;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+em {
+  font-weight: bold;
+  font-style: italic;
+}
+
+address {
+  a {
+    color: $blue;
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+
 p {
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+ul, dir, ol {
+  list-style: square;
+  li {
+    &::marker {
+      color: $blue;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+ol {
+  list-style: decimal;
+  li {
+    &::marker {
+      font-size: 1rem;
+    }
+  }
+}
+
+menu {
+  list-style: none;
+}
+
+dl {
+  dt {
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+  dd {
+    font-style: italic;
+    padding-left: 10px;
+  }
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
 }

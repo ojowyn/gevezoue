@@ -1,41 +1,51 @@
-uuid: e401b552-4431-4ef8-a470-8653f79b3058
+uuid: f19a4890-6bf8-42c0-bf50-2a25d88f4521
 langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.search_result
     - field.field.node.personnalite.field_corps
     - field.field.node.personnalite.field_portrait
     - field.field.node.personnalite.field_type
     - node.type.personnalite
   module:
+    - entity_reference_revisions
     - user
-id: node.personnalite.teaser
+id: node.personnalite.search_result
 targetEntityType: node
 bundle: personnalite
-mode: teaser
+mode: search_result
 content:
+  field_corps:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   field_portrait:
-    type: entity_reference_label
-    weight: 2
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_type:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
-    label: above
+  field_type:
+    weight: 2
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_corps: true
   langcode: true

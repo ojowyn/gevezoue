@@ -1,0 +1,18 @@
+@import "../mixin";
+
+.container {
+  margin: 0 10px;
+  /* tablette */
+  @include breakpoint(tablette){
+    max-width: 700px;
+    margin: auto;
+  }
+  /* desktop */
+  @include breakpoint(desktop){
+    max-width: 960px;
+  }
+  /* large screen */
+  @include breakpoint(large){
+    max-width: 1320px;
+  }
+}

@@ -16,35 +16,35 @@ bundle: personnalite
 mode: default
 content:
   field_corps:
-    weight: 103
-    label: above
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    region: content
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
-    region: content
   field_portrait:
     type: entity_reference_entity_view
-    weight: 101
-    label: above
+    weight: 1
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
   field_type:
-    weight: 102
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true

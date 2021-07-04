@@ -1,22 +1,23 @@
-uuid: 72052cde-8fd0-4a22-b908-2a28dae41b6a
+uuid: 12ec0f95-d49f-4efe-9202-7ef58a5e7970
 langcode: fr
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.card
     - field.field.node.editeur.field_corps
     - field.field.node.editeur.field_logo
     - node.type.editeur
   module:
     - entity_reference_revisions
     - user
-id: node.editeur.default
+id: node.editeur.card
 targetEntityType: node
 bundle: editeur
-mode: default
+mode: card
 content:
   field_corps:
     weight: 102
-    label: above
+    label: visually_hidden
     settings:
       view_mode: default
       link: ''
@@ -26,9 +27,9 @@ content:
   field_logo:
     type: entity_reference_entity_view
     weight: 101
-    label: above
+    label: visually_hidden
     settings:
-      view_mode: default
+      view_mode: image_cards
       link: false
     third_party_settings: {  }
     region: content

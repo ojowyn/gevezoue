@@ -1,0 +1,56 @@
+@import "../mixin";
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fefefe;
+  box-shadow: #0e2231 5px 5px 20px -10px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+
+  @include breakpoint(tablette) {
+    width: calc(50% - 20px);
+  }
+
+  @include breakpoint(desktop) {
+  width: calc( 100% / 3 - 20px);
+  }
+
+  @include breakpoint(large) {
+    width: calc( 100% / 4 - 20px);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .card-content {
+
+  }
+  .read-more {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #0a65aa;
+    display: inline-block;
+    transition: all 400ms ease-in-out;
+    &:after {
+      content: "";
+      display: block;
+      position: relative;
+      height: 2px;
+      background: #0a65aa;
+      width: 0;
+      transition: all 400ms ease-in-out;
+    }
+    &:hover, &:focus {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+

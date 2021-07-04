@@ -3,7 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.card
     - node.type.article
     - system.menu.main
     - taxonomy.vocabulary.categorie
@@ -75,7 +75,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: card
       fields:
         title:
           id: title
